@@ -1,6 +1,8 @@
 
+
+
 def leap(a,b,c):
-    if(c%4==0 and c%100!=0 and b=='Feb' and a==29):
+    if(c%4==0 and (c%100!=0 or c%400==0) and b=='Feb' and a==29):
         return True
     else :return False
 
