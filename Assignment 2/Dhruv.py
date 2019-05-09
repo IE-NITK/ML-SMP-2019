@@ -16,12 +16,14 @@ for i in range(0,n):
 		if(a[i][j]>n or a[i][j]==0):
 			d=1
 			break
-		c=c+a[i][j]
-	if(c!=(n*(n+1)/2)):
-		d=1
-		break
-	c=0
-if(d==1):
+		for k in range(0,n):
+			if(a[i][j]==a[i][k] and (j!=k)):
+				d=1
+				break
+			if(a[i][j]==a[k][j] and (i!=k)):
+				d=1
+				break
+if(d==1): 
 	print("Your given matrix is not perfect sudoku or your input is wrong")
 else:
 	print("Matrix is perfect sudoku") 
