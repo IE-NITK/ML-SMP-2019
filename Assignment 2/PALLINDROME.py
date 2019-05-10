@@ -10,4 +10,4 @@ n=pallindrome(s)
 if n==0:
        print("The string is a pallindrome")
 else:
-        print("Not a pallindrome")
+       print("Not a pallindrome")
